@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>cn.iocoder.boot</groupId>
+        <artifactId>yudao</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>yudao-module-blog</artifactId>
+    <packaging>pom</packaging> <!-- 2. 新增 packaging 为 pom -->
+
+    <name>${project.artifactId}</name> <!-- 3. 新增 name 为 ${project.artifactId} -->
+    <description> <!-- 4. 新增 description 为该模块的描述 -->
+        blog 模块，主要实现 博客 等功能。
+    </description>
+    <modules>
+        <module>yudao-module-blog-biz</module>
+        <module>yudao-module-blog-api</module>
+    </modules>
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>

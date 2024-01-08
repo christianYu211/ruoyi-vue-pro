@@ -21,4 +21,9 @@ public class SystemWebConfiguration {
         return YudaoSwaggerAutoConfiguration.buildGroupedOpenApi("system");
     }
 
+    @Bean
+    public GroupedOpenApi blogGroupedOpenApi() {
+        return YudaoSwaggerAutoConfiguration.buildGroupedOpenApi("blog");
+    }
+
 }
